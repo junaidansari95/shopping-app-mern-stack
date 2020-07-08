@@ -1,0 +1,114 @@
+.grid-container{
+  max-width: 1335px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.grid-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.grid-item {
+    display: flex;
+  margin: auto;
+  flex-basis: 20%;
+  /* -ms-flex: auto; */
+  max-width: 259px;
+  overflow: hidden;
+  position: relative;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.product-detail-container{
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+}
+.image-list{
+  -webkit-align-content: space-between;
+  align-content: space-between;
+  width: 80px;
+  height: 100%;
+  float: left;
+}
+.image-list-item{
+  display: flex;
+  justify-content: center;
+  max-width: 80px;
+  max-height: 80px;
+  justify-content: center;
+  border: 2px solid rgba(72, 72, 155, 0.377);
+}
+.image-list-item :hover{
+  max-width: 80px;
+  max-height: 80px;
+  border: 2px solid blue;
+}
+.image-main{
+  width: auto;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+}
+.product-box{
+  width: 850px;
+  height: fit-content;
+  padding: 35px;
+  box-shadow: 0 0 0 1px rgba(93, 93, 99, 0.05), 0 1px 3px 0 rgba(63,63,68,0.15);
+  border-radius: 8px;
+}
+.product-description{
+  padding: 17px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.comment-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 420px;
+  max-height: 800px;
+  overflow-y: scroll;
+  height: fit-content;
+  padding: 14px;
+  box-shadow: 0 0 0 1px rgba(93, 93, 99, 0.05), 0 1px 3px 0 rgba(63,63,68,0.15);
+  border-radius: 8px;
+}
+.cart-item-box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 13;
+  background: '#c9e2f187';
+  border-radius: 8px;
+  box-shadow: 0 0 0 1px rgba(93, 93, 99, 0.05), 0 1px 3px 0 rgba(63,63,68,0.15);
+}
+@media only screen and (max-width: 900px) {
+  .product-detail-container{
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+  }
+  .product-box{
+    width: auto;
+    height: fit-content;
+    padding: 35px;
+    box-shadow: 0 0 0 1px rgba(93, 93, 99, 0.05), 0 1px 3px 0 rgba(63,63,68,0.15);
+    border-radius: 8px;
+  }
+  .comment-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: auto;
+    max-height: 800px;
+    overflow-y: scroll;
+    height: fit-content;
+    padding: 14px;
+    box-shadow: 0 0 0 1px rgba(93, 93, 99, 0.05), 0 1px 3px 0 rgba(63,63,68,0.15);
+    border-radius: 8px;
+  }
+}
